@@ -13,7 +13,7 @@ function game() {
 
     for (let session = 0; session<5; session++) {
         computerSelection = getComputerChoice();
-        playerSelection = prompt("Rock, Paper or Scissors?");
+        playerSelection = prompt("Rock🪨, Paper📃 or Scissors✂️?");
 
         playRound(playerSelection, computerSelection)        
 
@@ -25,7 +25,7 @@ function game() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)
+    playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) // my intelligent solution to pythons own .capatilize
 
     if ((playerSelection === "Rock" && computerSelection === "Scissors")
     || playerSelection === "Paper" && computerSelection === "Rock" 
@@ -47,10 +47,11 @@ function playRound(playerSelection, computerSelection) {
 
     if (computerSelection === playerSelection) {
 
+        // replays round if draw - no draws allowed here 
         alert(`Computer Selection: ${computerSelection} \nPlayer Selection: ${playerSelection}\n\nTie. Replay Round!`)
 
         computerSelection = getComputerChoice();
-        playerSelection = prompt("Rock, Paper or Scissors?");
+        playerSelection = prompt("Rock🪨, Paper📃 or Scissors✂️?");
         playRound(playerSelection, computerSelection)
     }
 
