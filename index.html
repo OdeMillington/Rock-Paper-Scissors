@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="RPS.js"></script>
+    <script src="RPS.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-    
+
+    <header>
+        <p>ROCK PAPER SCISSORS</p>
+    </header>
+
+    <div class="scores">
+        <p id="player_score">Player: 0</p>
+        <p id="computer_score">Computer: 0</p>
+    </div>
+
+    <div class="selection">
+        <div class="playerselection">
+            <p id="playerselection"></p>
+            <p>Player</p>
+        </div>
+
+        <div class="computerselection">
+            <p id="computerselection"></p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <div class="result">
+        <p id="result"></p>
+    </div>
+
+    <div class="container">
+        <div class="box" id="rock">
+            ✊
+        </div>
+
+        <div class="box" id="paper">
+            ✋
+        </div>
+
+        <div class="box" id="scissors">
+            ✌
+        </div>
+    </div>
+
+
 </body>
 </html>
